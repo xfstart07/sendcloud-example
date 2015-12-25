@@ -1,0 +1,11 @@
+development:
+  mail_url: "http://sendcloud.sohu.com/webapi/mail.send.json"
+  mail_template_url: "http://sendcloud.sohu.com/webapi/mail.send_template.json"
+  mail_api_user: "example_api_user"
+  mail_api_user_batch: "example_api_user_batch"
+  mail_api_key: "example_api_key"
+  mail_form: 'SendCloud Test <example@gmail.com>'
+  mail_to_email: "example_to@gmail.com"
+
+  apiv2_mail_url: "http://api.sendcloud.net/apiv2/mail"
+  apiv2_mail_template: "http://api.sendcloud.net/apiv2/mail/sendtemplate"

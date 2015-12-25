@@ -1,0 +1,5 @@
+== README
+
+SendCloud(http://sendcloud.sohu.com/) 用 active job 通过 http 方式发送邮件.
+
+
