@@ -11,7 +11,10 @@ class SendMailJob < ActiveJob::Base
                                from: Figaro.env.mail_form, # 发信人，用正确邮件地址替代
                                to: Figaro.env.mail_to_email,
                                subject: "TEST",
-                               html: html
+                               html: html,
+                               timeout: 10,
+                               open_timeout: 10
+
     Rails.logger.debug(response)
   end
 end

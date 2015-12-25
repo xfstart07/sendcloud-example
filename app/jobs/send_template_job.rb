@@ -15,7 +15,9 @@ class SendTemplateJob < ActiveJob::Base
                                substitution_vars: vars,
                                template_invoke_name: "test_template_send",
                                subject: "TEST SendCloud",
-                               resp_email_id: true
+                               resp_email_id: true,
+                               timeout: 10,
+                               open_timeout: 10
     Rails.logger.info(response)
   end
 end

@@ -14,7 +14,10 @@ class Apiv2MailJob < ActiveJob::Base
                                to: Figaro.env.mail_to_email,
                                templateInvokeName: "test_template_send",
                                subject: "TEST SendCloud",
-                               xsmtpapi: vars
+                               xsmtpapi: vars,
+                               timeout: 10,
+                               open_timeout: 10
+
     Rails.logger.info(response)
     # {"result":false,"statusCode":40005,"message":"认证失败","info":{}}
   end
